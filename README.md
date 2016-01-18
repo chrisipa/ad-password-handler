@@ -1,6 +1,8 @@
 AD Password Handler
 =======
 
+[![Build Status](https://papke.it/jenkins/buildStatus/icon?job=ad-password-handler)](https://papke.it/jenkins/job/ad-password-handler/)
+
 Overview
 -------------
 If you are a linux guy trapped in a corporate windows environment with an active directory domain controller and annoying password policies, this tool is for you. It checks the expiration of your active directory password on your linux machine. If the password will expire in a given time, a popup is shown where you can directly change it:
