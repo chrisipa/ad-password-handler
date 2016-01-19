@@ -16,12 +16,23 @@ Prerequisites
 * [JAVA_HOME](http://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/index.html) environment variable has to be set
 * SMB share must be mounted with fstab and a [credentials file](http://www.samba.org/samba/docs/using_samba/ch05.html#samba2-CHP-5-SECT-4.1)
 
+
 Installation
 -------------
-* Download and extract the zip archive:
+* Create install directory:
 ```
-sudo wget https://raw.githubusercontent.com/chrisipa/ad-password-handler/master/public/ad-password-handler.zip
-sudo unzip ad-password-handler.zip -d /opt
+sudo mkdir /opt/ad-password-handler
+```
+
+* Download necessary files:
+```
+sudo wget https://raw.githubusercontent.com/chrisipa/ad-password-handler/master/bin/ad-password-handler -O /opt/ad-password-handler/ad-password-handler
+sudo wget https://papke.it/jenkins/job/ad-password-handler/lastStableBuild/de.papke%24ad-password-handler/artifact/de.papke/ad-password-handler/1.0.3/ad-password-handler-1.0.3.jar -O /opt/ad-password-handler/ad-password-handler.jar
+```
+
+* Make starter script executable:
+```
+sudo chmod +x /opt/ad-password-handler/ad-password-handler
 ```
 
 Configuration
