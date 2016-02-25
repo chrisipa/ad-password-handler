@@ -2,6 +2,7 @@ AD Password Handler
 =======
 
 [![Build Status](https://papke.it/jenkins/buildStatus/icon?job=ad-password-handler)](https://papke.it/jenkins/job/ad-password-handler/)
+[![Code Analysis](https://img.shields.io/badge/code%20analysis-available-blue.svg)](https://papke.it/sonar/overview?id=17)
 
 Overview
 -------------
